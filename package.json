@@ -1,0 +1,12 @@
+{
+  "name": "simple-login-unit-test",
+  "version": "1.0.0",
+  "description": "Form đăng nhập đơn giản kèm Unit Test với Jest",
+  "main": "login.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
