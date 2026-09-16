@@ -13,21 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Bước 1: Kéo code từ repository về runner
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Bước 2: Thiết lập môi trường Node.js (phiên bản 20 LTS)
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
-      # Bước 3: Cài đặt các thư viện phụ thuộc (Jest)
       - name: Install dependencies
         run: npm install
 
-      # Bước 4: Chạy script test
       - name: Run tests
         run: npm test
